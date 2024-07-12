@@ -66,7 +66,7 @@
     <p class="txt"  id=languageParagraph2>My Projects and Websites</p>
       
       <a class="link" href="https://capixabapedia.vipnunes.com" target="_blank">
-        📖 Capixabapédia - A Enciclopédia Capixaba
+        📖 Capixabapédia
       </a>
 
       <a rel='me' class="link" href="https://vipnunes.com/link-shortener" target="_blank">
@@ -106,6 +106,26 @@ function detectLanguage() {
         document.getElementById('languageParagraph').textContent = '¡Hola soy Vipnunes!';
     } else {
         document.getElementById('languageParagraph').textContent = "Hello, I'm Vipnunes!";
+    }
+}
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+</script>
+
+<script>
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph3').textContent = '🐦 Site da Minha Calopsita';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph3').textContent = '🐦 Sitio web de mi cacatúa';
+    } else {
+        document.getElementById('languageParagraph3').textContent = "🐦 My Cockatiel's Website";
     }
 }
 
