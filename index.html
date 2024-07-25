@@ -71,7 +71,7 @@
         📖 Capixabapédia
       </a>
 
-      <a rel='me' class="link" href="https://vipnunes.com/link-shortener" target="_blank">
+      <a rel='me' class="link" id=languageParagraph5 href="https://vipnunes.com/link-shortener" target="_blank">
         🔗 Link Shortener
       </a>
 
@@ -164,6 +164,26 @@ function detectLanguage() {
         document.getElementById('languageParagraph4').textContent = 'Mis sitios web ➡';
     } else {
         document.getElementById('languageParagraph4').textContent = "My Websites ➡";
+    }
+}
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+</script>
+
+<script>
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph5').textContent = '🔗 Encurtador de Links';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph5').textContent = '🔗 Acortador de enlaces';
+    } else {
+        document.getElementById('languageParagraph5').textContent = "🔗 Link Shortener";
     }
 }
 
