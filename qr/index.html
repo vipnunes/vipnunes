@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon2.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <div class="heading">
+        <img src="img/logo.png" alt="logo" width="150px">
+    </div>
+    <!-- https://goqr.me/api/ -->
+
+    <div class="github">
+        <a href="https://github.com/aviiciii" target="_blank">
+            <img src="img/github.svg" alt="github logo">
+        </a>
+    </div>
+    <div class="downspacing"></div>
+
+
+    <div class="form">
+        <form id="qr-form">
+            <!-- data  -->
+            <div class="form-outline mb-3">
+              <input type="text" name="data" class="form-control" required/>
+              <label class="form-label" for="data">Data</label>
+            </div>
+          
+            <!-- size  -->
+            <div class="form-outline mb-3">
+              <input type="number" name="size" class="form-control" value="200" min="10" max="1000" />
+              <label class="form-label" for="size">Size(AxA):</label>
+            </div>
+
+            <!-- Margin -->
+            <div class="form-outline mb-3">
+                <input type="number" name="margin" class="form-control active" value="0" min="0" max="50" />
+                <label class="form-label" for="margin">Margin</label>
+            </div>
+
+            <!-- Quiet Zone -->
+            <div class="form-outline mb-3">
+                <input type="number" name="qzone" class="form-control active" value="2" min="0" max="100" />
+                <label class="form-label" for="qzone">Quiet Zone</label>
+            </div>
+ 
+            <div class="row">
+                <div class="col">
+                    <div class="form-outline mb-3">
+                        <!-- ecc  -->
+                        <label class="form-label" for="ecc">ECC (Redundancy):</label>
+                        <!-- select input -->
+                        <select class="form-select" name="ecc">
+                            <option value="L" selected>Low</option>
+                            <option value="M">Medium</option>
+                            <option value="Q">High</option>
+                            <option value="H">Maximum</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Format -->
+                    <div class="form-outline mb-3">
+                        <label class="form-label" for="format">Format:</label>
+
+                        <select class="form-select" name="format">
+                            <option value="png" selected>PNG</option>
+                            <option value="gif">GIF</option>
+                            <option value="jpeg">JPEG</option>
+                            <option value="jpg">JPG</option>
+                            <option value="svg">SVG</option>
+                            <option value="eps">EPS</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+            <div class="row">
+                <div class="col">
+                    <!-- bg-color  -->
+                    <div class="mb-3 color">
+                        <label class="form-label" for="bgcolor">Background Color</label>
+                        <input type="color" name="bgcolor" value="#ffffff" />
+                    </div>
+                </div>
+                <div class="col">
+                <!-- color  -->
+                    <div class="mb-3 color">
+                        <label class="form-label" for="color">Color</label>
+                        <input type="color" name="color" value="#000000" />
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Submit button -->
+            <div class="mb-3">
+                <button type="submit" id="generate" class="btn btn-block">Generate</button>
+            </div>
+          
+        </form>
+    </div>
+
+    <div class="downspacing"></div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close"></span>
+            <div class="output" id="output-div">
+                <div id="qr-result" class="mb-3 align-qr">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="downspacing"></div>
+    
+
+    <!-- script -->
+    <script src="script.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+</body>
+</html>
