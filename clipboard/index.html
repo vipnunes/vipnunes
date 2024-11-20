@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZC1W16E8NY"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-ZC1W16E8NY');
+		</script>
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clipboard</title>
+
+		
+
+		<!-- favicon -->
+		
+		<link
+			type="image/png"
+			rel="icon"
+			href="assets/favicon.png"
+		/>
+		
+
+		<!-- bootstrap css -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<!-- bootstrap js -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- link styles.css -->
+		<link rel="stylesheet" href="assets/styles.css" />
+
+
+
+	</head>
+
+
+
+
+	<body>
+		<div class="devmode alert" role="alert" id="devmode">
+			Dev Mode
+		</div>
+
+		<!-- dark mode toggle -->
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-toggle" />
+            <label for="dark-mode-toggle">Dark Mode</label>
+        </div>
+
+		
+
+		<!-- logo -->
+		<div class="logo" >
+			<img
+				src="assets/logo.png" 
+				alt="logo"
+				id="logo"
+			/>
+		</div>
+		
+
+		<!-- Input Form-->
+		<div class="form-container">
+
+			<form id="form-add">
+				<textarea type="text" rows="10" cols="10"  name="text" id="text" autocomplete="off"></textarea>
+				<input type="submit" value="Add" id="submit" />
+			</form>
+		</div>
+		
+
+		<!-- show existing clipboards -->
+
+		<div class="existing-clipboards">
+			<div class="github">
+				<a href="https://github.com/aviiciii">
+					<img src="assets/github.png" alt="github logo" id="github-logo"/>
+				</a>
+			</div>
+			
+			<ul class="list-group">
+				<li class="list-group-item d-flex justify-content-between align-items-center" id="loading">
+					hola ! wait till the server kicks in (free tier 😵‍💫)
+				</li>
+				
+			</ul>
+		</div>
+
+		
+
+		<!-- javascript -->
+		<script src="assets/script.js"></script>
+
+	</body>
+</html>

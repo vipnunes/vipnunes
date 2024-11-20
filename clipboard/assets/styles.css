@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+:root{
+    --primary-color: #EEE2DC;
+    --secondary-color: #AC3B61;
+    --tertiary-color: #123C69;
+    --quaternary-color: #BAB2B5;
+}
+
+.dark-mode{
+    --primary-color: #1f1f1f;
+    --secondary-color: #E1A6BA;
+    --tertiary-color: #D4E9FF;
+    --quaternary-color: #323232;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Crete Round', serif;
+
+    /* scrollbar */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+
+    transition: all 0.5s ease-out;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+    width: 0;
+    height: 0;
+}
+
+/* dark mode toggle */
+.dark-mode-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 14px;
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+/* Dev Mode */
+.devmode{
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 700;
+    display: none;
+
+}
+
+
+/* logo */
+
+.logo img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 110px;
+    margin-bottom: 60px;
+
+    /* not selectable and draggable */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+
+    -webkit-user-drag: none; /* Safari */
+    -moz-user-drag: none; /* Firefox */
+    -ms-user-drag: none; /* IE10+/Edge */
+}
+
+/* input form */
+
+.form-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#text{
+    border: 0;
+    border-bottom: 4px solid var(--tertiary-color);
+    background-color: inherit;
+    width: 60%;
+    height: 6rem;
+    border-radius: 0;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: var(--tertiary-color);
+}
+
+#text:focus{
+    outline: none;
+}
+
+#number{
+    border: 0;
+    border-bottom: 4px solid var(--tertiary-color);
+    background-color: inherit;
+    width: 30%;
+    height: 40px;
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#number:focus{
+    outline: none;
+}
+
+#submit{
+    background-color: inherit;
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 10px;
+    padding: none;
+    margin-left: 40px;
+    font-size: 30px ;
+    font-weight: 700;
+
+    transition: 400ms;
+}
+
+#submit:hover{
+    filter: brightness(120%);
+    
+    transform: scale(1.02);
+    transition: 400ms;
+
+    cursor: pointer;
+}
+
+/* Clipboards */
+
+
+/* github icon */
+.existing-clipboards .github{
+    /* center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    -webkit-user-drag: none; /* Safari */
+    -moz-user-drag: none; /* Firefox */
+    -ms-user-drag: none; /* IE10+/Edge */
+    
+    margin-bottom: 20px;
+}
+
+.existing-clipboards a img {
+    width: 34px;
+    /* center */
+    vertical-align: middle;
+    line-height: normal;
+
+    -webkit-user-drag: none; /* Safari */
+    -moz-user-drag: none; /* Firefox */
+    -ms-user-drag: none; /* IE10+/Edge */
+
+    margin-top: 14px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+
+}
+
+.list-group{
+    width: 68%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.list-group-item{
+    background-color: var(--quaternary-color);
+    border: 1px solid var(--quaternary-color);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    min-height: 60px;
+    color: var(--tertiary-color);
+    transition: all 0.5s ease-out;
+    
+}
+
+pre{
+    color: var(--tertiary-color);
+}
+
+.badge img{
+    width: 20px;
+
+    -webkit-user-drag: none; /* Safari */
+    -moz-user-drag: none; /* Firefox */
+    -ms-user-drag: none; /* IE10+/Edge */
+}
+.copy-to-clipboard-button{
+    background-color: var(--quaternary-color);
+    border: 0;
+    border-radius: 10px;
+    min-height: 30px;
+    color: var(--tertiary-color);
+    text-align: center;
+    transition: all 0.5s ease-out;
+
+    -webkit-user-drag: none; /* Safari */
+    -moz-user-drag: none; /* Firefox */
+    -ms-user-drag: none; /* IE10+/Edge */
+
+    cursor: pointer;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+
+}
+
+
+
+.copy-to-clipboard-button:focus{
+    outline: none;
+}
+
+
+/* text highlight */
+
+::selection{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .logo img{
+        margin-top: 30px;
+        width: 200px;
+    }
+    #text{
+        width: 90%;
+        border-bottom: 3px solid var(--tertiary-color);
+    }
+    #submit{
+        margin-top: 10px;
+        margin-left: -10px;
+        font-size: 24px;
+    }
+    .form-container{
+        margin-bottom: 30px;
+    }
+    .existing-clipboards .github{
+        margin-bottom: 10px;
+    }
+
+    .existing-clipboards a img {
+        width: 40px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+    .list-group{
+        width: 90%;
+        font-size: 14px;
+    }
+}
+    
