@@ -79,11 +79,11 @@ function detectLanguage() {
     
     // Verifica a língua e atualiza o texto do parágrafo
     if (userLanguage.startsWith('pt')) {
-        document.getElementById('languageParagraph').textContent = 'Esse é o site onde tem todos os meus projetos e sites. você pode ver abaixo:';
+        document.getElementById('languageParagraph').textContent = 'Esse é o site onde tem todos os meus projetos e sites:';
     } else if (userLanguage.startsWith('es')) {
-        document.getElementById('languageParagraph').textContent = 'Este es el sitio donde se encuentran todos mis proyectos y sitios web. puedes ver a continuación:';
+        document.getElementById('languageParagraph').textContent = 'Este es el sitio donde se encuentran todos mis proyectos y sitios web:';
     } else {
-        document.getElementById('languageParagraph').textContent = "This is the website where I have all my projects and websites. You can see them below:";
+        document.getElementById('languageParagraph').textContent = "This is the website where I have all my projects and websites:";
     }
 }
 
