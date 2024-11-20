@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt--br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="calculadora.js"></script>
-</head>
-<body>
-    <div class="fundo">
-        <h1>Seu Nome</h1>
-        <div class="calculadora">
-            <h2>Calculadora</i></h2>
-            <p id="resultado"></p>
-                <table>                 
-                    <tr>
-                        <td><button class="botao" onclick="clean()">C</td>
-                        <td><button class="botao" onclick="back()"><</td>
-                        <td><button class="botao" onclick="insert('/')">/</button></td>
-                        <td><button class="botao" onclick="insert('*')">*</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="botao" onclick="insert('7')">7</button></td>
-                        <td><button class="botao" onclick="insert('8')">8</button></td>
-                        <td><button class="botao" onclick="insert('9')">9</button></td>
-                        <td><button class="botao" onclick="insert('-')">-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="botao" onclick="insert('4')">4</button></td>
-                        <td><button class="botao" onclick="insert('5')">5</button></td>
-                        <td><button class="botao" onclick="insert('6')">6</button></td>
-                        <td><button class="botao" onclick="insert('+')">+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="botao" onclick="insert('1')">1</button></td>
-                        <td><button class="botao" onclick="insert('2')">2</button></td>
-                        <td><button class="botao" onclick="insert('3')">3</button></td>
-                        <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
-                        <td><button class="botao" onclick="insert('.')">.</button></td>
-                    </tr>
-                </table>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="calculator">
+        <div class="screen">
+          <div class="screen-last" id="lastOperationScreen"></div>
+          <div class="screen-current" id="currentOperationScreen">0</div>
         </div>
-    </div>
-</body>
+        <div class="buttons-grid">
+          <button
+            class="btn btn-red span-2"
+            id="clearBtn"
+            onclick="this.blur();"
+          >
+            CLEAR
+          </button>
+          <button
+            class="btn btn-blue span-2"
+            id="deleteBtn"
+            onclick="this.blur();"
+          >
+            DELETE
+          </button>
+          <button class="btn" onclick="this.blur();" data-number>7</button>
+          <button class="btn" onclick="this.blur();" data-number>8</button>
+          <button class="btn" onclick="this.blur();" data-number>9</button>
+          <button class="btn" onclick="this.blur();" data-operator>÷</button>
+
+          <button class="btn" onclick="this.blur();" data-number>4</button>
+          <button class="btn" onclick="this.blur();" data-number>5</button>
+          <button class="btn" onclick="this.blur();" data-number>6</button>
+          <button class="btn" onclick="this.blur();" data-operator>×</button>
+
+          <button class="btn" onclick="this.blur();" data-number>1</button>
+          <button class="btn" onclick="this.blur();" data-number>2</button>
+          <button class="btn" onclick="this.blur();" data-number>3</button>
+          <button class="btn" onclick="this.blur();" data-operator>−</button>
+
+          <button class="btn" onclick="this.blur();" id="pointBtn">.</button>
+          <button class="btn" onclick="this.blur();" data-number>0</button>
+          <button class="btn" onclick="this.blur();" id="equalsBtn">=</button>
+          <button class="btn" onclick="this.blur();" data-operator>+</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
