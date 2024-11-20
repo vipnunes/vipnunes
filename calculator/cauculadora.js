@@ -21,6 +21,6 @@ function calcular()
     }
     else
     {
-        document.getElementById('resultado').innerHTML = "0"
+        document.getElementById('resultado').innerHTML = "Nada..."
     }
 }
