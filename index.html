@@ -68,27 +68,7 @@
     <p class="txt"  id=languageParagraph2>My Projects and Websites</p>
       
       <a rel='me' class="link" id=languageParagraph5 href="https://vipnunes.com/link-shortener" target="_blank">
-        🔗 Link Shortener
-      </a>
-
-      <a class="link" href="https://vipnunes.run.place" target="_blank">
-        👨‍💻 HTML Tester
-      </a>
-
-      <a class="link" href="https://vipnunes.com/notepad" target="_blank">
-        🗒️ Online & Offline Notepad
-      </a>
-      
-      <a class="link" href="https://vipnunes.com/qr" target="_blank">
-        🔨 QR Code Generator
-      </a>
-     
-     <a class="link" href="https://vipnunes.com/planet-click" target="_blank">
-        🌎 Planet Click
-      </a>
-      
-    <a class="link" id=languageParagraph3 href="https://alex.vipnunes.com/" target="_blank">
-        🐦 My Cockatiel's Website
+        🔗 Go to services
       </a>
       
     <div id="hashtag">
@@ -183,11 +163,11 @@ function detectLanguage() {
     
     // Verifica a língua e atualiza o texto do parágrafo
     if (userLanguage.startsWith('pt')) {
-        document.getElementById('languageParagraph5').textContent = '🔗 Encurtador de Links';
+        document.getElementById('languageParagraph5').textContent = '🔗 Ir para servicos';
     } else if (userLanguage.startsWith('es')) {
-        document.getElementById('languageParagraph5').textContent = '🔗 Acortador de enlaces';
+        document.getElementById('languageParagraph5').textContent = '🔗 Ir a servicios';
     } else {
-        document.getElementById('languageParagraph5').textContent = "🔗 Link Shortener";
+        document.getElementById('languageParagraph5').textContent = "🔗 Go to services";
     }
 }
 
