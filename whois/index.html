@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whois Lookup</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #76c7c0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            color: #a0a0a0;
+        }
+
+        input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #76c7c0;
+            color: #121212;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5fa29b;
+        }
+
+        #result {
+            margin-top: 20px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 100%;
+            overflow-x: auto;
+            color: #c7c7c7;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            display: none; /* Oculta o resultado até que seja gerado */
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            button, input {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Whois Lookup</h1>
+    <p>Enter a domain to get its whois information:</p>
+    <input type="text" id="domain" placeholder="example.com">
+    <button onclick="lookup()">Lookup</button>
+    <div id="result"></div>
+
+    <script>
+        async function lookup() {
+            const domain = document.getElementById('domain').value.trim();
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = "block";
+            resultDiv.textContent = "Loading...";
+
+            if (!domain) {
+                resultDiv.textContent = "Please enter a domain.";
+                return;
+            }
+
+            try {
+                const response = await fetch(`https://who-dat.as93.net/${domain}`);
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.statusText}`);
+                }
+                const data = await response.json();
+                displayResult(data, resultDiv);
+            } catch (error) {
+                console.error(error);
+                resultDiv.textContent = "An error occurred. Please check the domain and try again.";
+            }
+        }
+
+        function displayResult(data, resultDiv) {
+            resultDiv.textContent = ""; // Clear the current content
+            resultDiv.textContent = JSON.stringify(data, null, 2); // Exibe o objeto JSON
+        }
+    </script>
+</body>
+</html>
