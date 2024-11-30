@@ -41,7 +41,7 @@
         ✉ E-mail
       </a>
 
-      <a rel='me' class="link" href="https://vipnunes.com" >
+      <a rel='me' class="link" id=languageParagraph6 href="https://vipnunes.com" >
         ⬅️ Go Back to vipnunes.com
       </a>
       
@@ -51,7 +51,7 @@
         🔗 Link Shortener
       </a>
 
-      <a rel='me' class="link" id=languageParagraph5 href="https://vipnunes.com/search" target="_blank">
+      <a rel='me' class="link" href="https://vipnunes.com/search" target="_blank">
         🔍 Vipnunes Search
       </a>
 
@@ -91,6 +91,7 @@
       vipnunes.com/services
     </div>
       
+
 <script>
 // Função para detectar a língua do navegador
 function detectLanguage() {
@@ -190,6 +191,26 @@ function detectLanguage() {
 // Chama a função de detecção de linguagem quando a página é carregada
 detectLanguage();
 </script>
+
+<script>
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph6').textContent = '⬅️ Voltar para vipnunes.com';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph6').textContent = '⬅️ Volver a vipnunes.com';
+    } else {
+        document.getElementById('languageParagraph6').textContent = "⬅️ Go back to vipnunes.com":
+} 
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+</script>
+
       
   </body>
 </html>
