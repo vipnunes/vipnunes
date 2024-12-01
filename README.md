@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **HTML**
 
-- 👨‍💻 All of my projects are available at [https://vipnunes.com](https://vipnunes.com)
+- 👨‍💻 All of my projects are available at [https://vipnunes.com/services](https://vipnunes.com/services)
 
 - 📝 I regularly write articles in portuguese on [https://vipnunes.com/blog](https://vipnunes.com/blog)
 
