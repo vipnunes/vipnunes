@@ -11,7 +11,7 @@
 
 - 👨‍💻 All of my projects are available at [https://vipnunes.com](https://vipnunes.com)
 
-- 📝 I regularly write articles in portuguese on [https://blog.vipnunes.com](https://blog.vipnunes.com)
+- 📝 I regularly write articles in portuguese on [https://vipnunes.com/blog](https://vipnunes.com/blog)
 
 - 📫 How to reach me **contato@vipnunes.com**
 
