@@ -13,7 +13,7 @@
 
 - 📝 I regularly write articles in portuguese on [https://vipnunes.com/blog](https://vipnunes.com/blog)
 
-- 📫 How to reach me **contato@vipnunes.com**
+- 📫 How to reach me **admin@vipnunes.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
