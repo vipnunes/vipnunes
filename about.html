@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vipnunes</title>
+    <title>Vipnunes - Sobre</title>
     <link rel="icon" href="https://vipnunes.com/img/11zon_cropped(1).png" type="image/x-icon" />
     <style>
         body {
@@ -39,15 +39,7 @@
     <a href="https://vipnunes.com" target="_blank" class="voltar" id="link-back">ir para vipnunes.com</a>
     <h1 id="title">Sobre Mim</h1>
     <p id="content">
-        🪧 Olá, eu sou o Vipnunes, uma pessoa comum na internet, sou um youtuber e dev, nasci no Brasil no Estado do Espírito Santo, e moro aqui também. Eu crio sites e projetos na web. Não tenho muita informação a apresentar, mas ainda tenho um pouco: meu e-mail é <a href="mailto:admin@vipnunes.com">admin@vipnunes.com</a> (caso queira falar comigo) e minhas redes sociais ficam localizadas no site <a href="https://vipnunes.com">vipnunes.com</a>, que inclui minhas informações e meus projetos. Estou aqui criando estes sites desde 2023, porque acho criativo e gosto também.<br><br>
-        ✨ Informações <br>
-        💻 Gosto muito de HTML;<br>
-        🎧 Meus estilos musicais: Vaporwave, Phonk (Drift Phonk), Rock e Pop;<br>
-        🍫 Doce favorito: Chocolate, mas às vezes troco pelo pudim;<br>
-        🎈 O que eu gosto de fazer: Acessar a internet, assistir YouTube e comer;<br>
-        🎮 Gosto de jogar jogos de Tycoon, Simulators e Minecraft;<br>
-        📖 Estudante;<br>
-        ✨ Meus dispositivos: Samsung Galaxy A51 e um Xbox One S;<br>
+        🪧 Olá, eu sou o Vipnunes, uma pessoa comum na internet...
     </p>
 
     <script>
@@ -101,7 +93,7 @@
 
         function translatePage() {
             const userLang = navigator.language || navigator.userLanguage;
-            const lang = translations[userLang] ? userLang : "en";
+            const lang = translations[userLang] ? userLang : "en"; // Default to English if not found
 
             document.getElementById("link-back").innerText = translations[lang].linkBack;
             document.getElementById("title").innerText = translations[lang].title;
