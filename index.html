@@ -53,7 +53,7 @@
       </a>
 
       <a class="link" href="https://vipnunes.com/donate" target="_blank">
-        💰 Picpay
+        💰 Pay my domain (Picpay)
       </a>
 
     <p class="txt">Socials</p>
@@ -197,6 +197,26 @@ function detectLanguage() {
         document.getElementById('languageParagraph7').textContent = '🪧 Sobre mí';
     } else {
         document.getElementById('languageParagraph7').textContent = "🪧 About Me";
+    }
+}
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+</script>
+
+<script>
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph7').textContent = '💰 Pague meu domínio (Picpay)';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph7').textContent = '💰 Pagar mi dominio (Picpay)';
+    } else {
+        document.getElementById('languageParagraph7').textContent = "💰 Pay my domain (Picpay)";
     }
 }
 
