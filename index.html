@@ -41,6 +41,10 @@
         ✉ E-mail
       </a>
 
+      <a class="link" id=languageParagraph7 id href="https://youtube.com/about" target="_blank">
+        🪧 About Me
+      </a>
+
     <p class="txt">Socials</p>
       
       <a class="link" href="https://youtube.com/vipnunes" target="_blank">
@@ -168,6 +172,26 @@ function detectLanguage() {
         document.getElementById('languageParagraph5').textContent = '🔗 Ir a servicios';
     } else {
         document.getElementById('languageParagraph5').textContent = "🔗 Go to services";
+    }
+}
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+</script>
+
+<script>
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph7').textContent = '🪧 Sobre Mim';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph7').textContent = '🪧 Sobre mí';
+    } else {
+        document.getElementById('languageParagraph7').textContent = "🪧 About Me";
     }
 }
 
