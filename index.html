@@ -52,7 +52,7 @@
         🪧 About Me
       </a>
 
-      <a class="link" href="https://vipnunes.com/donate" target="_blank">
+      <a class="link" id=languageParagraph8 href="https://vipnunes.com/donate" target="_blank">
         💰 Pay my domain (Picpay)
       </a>
 
@@ -212,11 +212,11 @@ function detectLanguage() {
     
     // Verifica a língua e atualiza o texto do parágrafo
     if (userLanguage.startsWith('pt')) {
-        document.getElementById('languageParagraph7').textContent = '💰 Pague meu domínio (Picpay)';
+        document.getElementById('languageParagraph8').textContent = '💰 Pague meu domínio (Picpay)';
     } else if (userLanguage.startsWith('es')) {
-        document.getElementById('languageParagraph7').textContent = '💰 Pagar mi dominio (Picpay)';
+        document.getElementById('languageParagraph8').textContent = '💰 Pagar mi dominio (Picpay)';
     } else {
-        document.getElementById('languageParagraph7').textContent = "💰 Pay my domain (Picpay)";
+        document.getElementById('languageParagraph8').textContent = "💰 Pay my domain (Picpay)";
     }
 }
 
