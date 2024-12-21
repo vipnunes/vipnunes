@@ -13,7 +13,7 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: var(--font);
-    background-image: url('https://vipnunes.com/img/image-from-rawpixel-id-3337865-original.jpg');
+    background-image: url('https://vipnunes.com/img/image-from-rawpixel-id-3305728-original.jpg');
     opacity: 0;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
     animation-fill-mode: forwards;
