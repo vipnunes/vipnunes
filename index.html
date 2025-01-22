@@ -23,6 +23,17 @@
   </head>
 
   <body>
+
+<!-- Fundo acinzentado -->
+<div class="popup-overlay" id="popup-overlay"></div>
+
+<!-- Conteúdo do pop-up -->
+<div class="popup" id="popup">
+  <button class="popup-close" id="popup-close">X</button>
+  <h1 id="popup-text">Olá, pode se inscrever no meu canal do YouTube?</h1>
+  <a href="https://vipnunes.com/i/vipnunes" target="_blank">Sim!</a>
+</div>
+
     
     <!-- Parallax Pixel Background Animation -->
       <!-- <section class="animated-background">
@@ -215,6 +226,33 @@ function detectLanguage() {
 // Chama a função de detecção de linguagem quando a página é carregada
 detectLanguage();
 </script>
+
+<script>
+  // Textos traduzidos
+  const translations = {
+    "pt": "Olá, pode se inscrever no meu canal do YouTube? (@vipnunes)",
+    "en": "Hi, can you subscribe to my YouTube channel? (@vipnunes)",
+    "es": "Hola, ¿puedes suscribirte a mi canal de YouTube? (@vipnunes)"
+  };
+
+  // Detecta o idioma do navegador
+  const userLang = navigator.language.slice(0, 2);
+  const popupText = document.getElementById("popup-text");
+
+  // Aplica a tradução baseada no idioma ou usa português como padrão
+  popupText.textContent = translations[userLang] || translations["pt"];
+
+  // Exibe o fundo e o pop-up
+  document.getElementById("popup-overlay").style.display = "block";
+  document.getElementById("popup").style.display = "block";
+
+  // Função para fechar o pop-up
+  document.getElementById("popup-close").addEventListener("click", () => {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("popup-overlay").style.display = "none";
+  });
+</script>
+
       
   </body>
 </html>
