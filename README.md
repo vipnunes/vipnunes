@@ -5,13 +5,13 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vipnunes" alt="vipnunes" /></a> </p>
 
-- 📫 My Website its [https://vipnunes.com](https://vipnunes.com/)
+- 📫 My Website its [https://vipnunes.github.io](https://vipnunes.github.io/)
 
 - 🌱 I’m currently learning **HTML**
 
-- 👨‍💻 All of my projects are available at [https://vipnunes.com/services](https://vipnunes.com/services)
+- 👨‍💻 All of my projects are available at [https://vipnunes.github.io/services](https://vipnunes.github.io/services)
 
-- 📝 I regularly write articles in portuguese on [https://vipnunes.com/blog](https://vipnunes.com/blog)
+- 📝 I regularly write articles in portuguese on [https://vipnunes.github.io/blog](https://vipnunes.github.io/blog)
 
 - 📫 How to reach me **admin@vipnunes.com**
 
