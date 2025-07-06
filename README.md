@@ -1,7 +1,7 @@
 <img src="https://vipnunes.com/img/space.jpg" alt="Vipnunes" class="profile-image">
 
 <h1 align="center">Hello 👋 i'm Vipnunes!</h1>
-<h3 align="center">A **mini** developer from Brazil thats speaks english and portuguese</h3>
+<h3 align="center">A mini developer from Brazil thats speaks english and portuguese</h3>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vipnunes" alt="vipnunes" /></a> </p>
 
