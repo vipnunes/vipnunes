@@ -1,17 +1,19 @@
-<img src="https://vipnunes.com/img/space.jpg" alt="Vipnunes" class="profile-image">
+<img src="https://vipnunes.github.io/img/space.jpg" alt="Vipnunes" class="profile-image">
 
 <h1 align="center">Hello 👋 i'm Vipnunes!</h1>
-<h3 align="center">A mini developer from Brazil thats speaks english and portuguese</h3>
+<h3 align="center">A mini developer from Brazil that speaks english and portuguese</h3>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vipnunes" alt="vipnunes" /></a> </p>
 
-- 📫 My Website its [https://vipnunes.com](https://vipnunes.com/)
+- 📫 My Website its [https://vipnunes.run.place](https://vipnunes.run.place/)
 
 - 🌱 I’m currently learning **HTML and CSS**
 
 - 👨‍💻 All of my projects are available at [https://vipnunes.itch.io](https://vipnunes.itch.io)
 
-- 📝 I regularly write articles in portuguese on [https://vipnunes.com/blog](https://vipnunes.com/blog)
+- 📝 I regularly write posts in portuguese on [https://vipnunes.run.place/blog](https://vipnunes.run.place/blog)
+
+- 📝 I regularly write articles in portuguese on [https://wiki.vipnunes.run.place/](https://vipnunes.run.place/i/wiki)
 
 - 📫 How to reach me **vipnunes.github.io@gmail.com**
 
