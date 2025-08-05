@@ -11,7 +11,7 @@
 
 - 👨‍💻 All of my projects are available at [https://vipnunes.itch.io](https://vipnunes.itch.io)
 
-- 📝 I regularly write posts in portuguese on [https://vipnunes.run.place/blog](https://vipnunes.run.place/blog)
+- 📝 I regularly write posts in portuguese on [https://blog.otavio.top](https://blog.otavio.top)
 
 - 📝 I regularly write articles in portuguese on [https://wiki.vipnunes.run.place/](https://vipnunes.run.place/i/wiki)
 
