@@ -1,5 +1,3 @@
-<img src="https://vipnunes.github.io/img/space.jpg" alt="Vipnunes" class="profile-image">
-
 <h1 align="center">Hello 👋 i'm Vipnunes!</h1>
 <h3 align="center">A mini developer from Brazil that speaks english and portuguese</h3>
 
