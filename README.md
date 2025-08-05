@@ -13,9 +13,9 @@
 
 - 📝 I regularly write posts in portuguese on [https://blog.otavio.top](https://blog.otavio.top)
 
-- 📝 I regularly write articles in portuguese on [https://wiki.vipnunes.run.place](https://vipnunes.run.place/i/wiki)
+- 📝 I regularly write articles in portuguese on [https://wiki.vipnunes.run.place](https://wiki.vipnunes.run.place)
 
-- 📫 How to reach me **hi@otavio.top**
+- 📫 How to reach me **hi+vipnunes@otavio.top**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
